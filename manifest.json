@@ -1,0 +1,13 @@
+{
+  "name": "Escuma · lavandería (demostración)",
+  "short_name": "Escuma",
+  "description": "Plantilla de demostración para lavandería. Negocio ficticio.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#F2F5F1",
+  "theme_color": "#F2F5F1",
+  "lang": "es",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

@@ -1,0 +1,391 @@
+<!doctype html>
+<!--
+  ============================================================================
+  SITIO DE DEMOSTRACIÓN. «Escuma, lavandería» es un negocio FICTICIO,
+  inventado para esta plantilla. Nombre, dirección, teléfono, horarios,
+  precios, máquinas y personas son datos de muestra y no corresponden a
+  ningún negocio real. No indexar, no citar como fuente.
+  Concepto: «Etiqueta».
+  ============================================================================
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Escuma · lavandería (demostración)</title>
+<meta name="description" content="Plantilla de demostración para lavandería. Escuma es un negocio ficticio: autoservicio de 7 a 23, lavar y doblar en 24 horas y un descifrador de etiquetas.">
+<meta name="theme-color" content="#F2F5F1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Escuma · lavandería (sitio de demostración)">
+<meta property="og:description" content="Negocio ficticio. Plantilla con concepto «Etiqueta»: los símbolos de la etiqueta como sistema visual, con descifrador incluido.">
+<meta property="og:image" content="assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&family=Figtree:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/estilo.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DryCleaningOrLaundry",
+  "name": "Escuma",
+  "description": "Lavandería de autoservicio con lavado y planchado. Negocio ficticio usado como demostración.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rúa do Pozo, 6",
+    "postalCode": "36600",
+    "addressLocality": "Vilagarcía de Arousa",
+    "addressRegion": "Pontevedra",
+    "addressCountry": "ES"
+  },
+  "telephone": "+34986000073",
+  "email": "hola@escuma.example",
+  "priceRange": "€",
+  "openingHours": ["Mo-Su 07:00-23:00"],
+  "disambiguatingDescription": "Negocio ficticio. Sitio de demostración."
+}
+</script>
+</head>
+<body>
+<a class="salto" href="#contenido">Saltar al contenido</a>
+
+<div class="cursor" aria-hidden="true" data-cursor>
+  <span class="cursor__burbuja"></span>
+  <span class="cursor__texto"></span>
+</div>
+
+<header class="cabecera" data-cabecera>
+  <a class="marca" href="#inicio">
+    <svg class="marca__icono" viewBox="0 0 34 34" aria-hidden="true" focusable="false">
+      <rect x="4" y="4" width="26" height="26" rx="5" fill="none" stroke="currentColor" stroke-width="3"/>
+      <circle cx="17" cy="18" r="8" fill="none" stroke="currentColor" stroke-width="3"/>
+      <circle cx="17" cy="18" r="2.5" fill="currentColor"/>
+    </svg>
+    <span class="marca__texto">Escuma</span>
+  </a>
+
+  <button class="hamburguesa" type="button" aria-expanded="false" aria-controls="menu-principal" data-menu-boton>
+    <span class="hamburguesa__lineas" aria-hidden="true"><i></i><i></i></span>
+    <span>Menú</span>
+  </button>
+
+  <nav class="nav" id="menu-principal" aria-label="Navegación principal" data-menu>
+    <ul>
+      <li><a href="#descifra">Tu etiqueta</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#autoservicio">Autoservicio</a></li>
+      <li><a href="#cuando">Cuándo lo tienes</a></li>
+      <li><a href="#visita">Dónde estamos</a></li>
+    </ul>
+    <a class="boton boton--verde nav__cta" href="#servicios">Ver precios</a>
+  </nav>
+</header>
+
+<main id="contenido">
+
+  <!-- ══════════ HERO: LA ETIQUETA ══════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero__texto">
+      <p class="kicker">Vilagarcía de Arousa · autoservicio de 7 a 23 · desde 2012</p>
+      <h1 class="hero__titulo" data-char>Tu ropa ya te dice cómo lavarla</h1>
+      <p class="hero__entrada">
+        Está escrito en esa etiqueta que pica en el cuello y que nadie entiende. Nosotros
+        la leemos todos los días: aquí abajo te la traducimos, y si no te apetece, la
+        lavamos nosotros y te la devolvemos doblada.
+      </p>
+      <div class="hero__acciones">
+        <a class="boton boton--verde" href="#descifra" data-iman>Descifrar mi etiqueta</a>
+        <a class="boton boton--linea" href="#servicios" data-iman>Precios</a>
+      </div>
+    </div>
+
+    <figure class="etiqueta" data-etiqueta>
+      <div class="etiqueta__tela">
+        <p class="etiqueta__marca">ESCUMA · 100 % ALGODÓN</p>
+        <ul class="etiqueta__simbolos">
+          <li><img src="assets/simbolos/simbolo-lavar-30.svg" width="100" height="100" alt="Lavar a 30 grados."></li>
+          <li><img src="assets/simbolos/simbolo-no-blanquear.svg" width="100" height="100" alt="No usar lejía."></li>
+          <li><img src="assets/simbolos/simbolo-secadora-suave.svg" width="100" height="100" alt="Secadora suave."></li>
+          <li><img src="assets/simbolos/simbolo-planchar-medio.svg" width="100" height="100" alt="Planchar a temperatura media."></li>
+          <li><img src="assets/simbolos/simbolo-seco-p.svg" width="100" height="100" alt="Limpieza en seco."></li>
+        </ul>
+        <p class="etiqueta__pie">HECHO PARA UNA DEMOSTRACIÓN · NO ES UNA PRENDA REAL</p>
+      </div>
+      <figcaption>Los cinco símbolos que lleva casi toda la ropa, en el orden en que se leen.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ══════════ DESCIFRADOR ══════════ -->
+  <section class="descifra" id="descifra" aria-labelledby="t-descifra">
+    <div class="seccion__cabeza">
+      <p class="indice">01 — Tu etiqueta</p>
+      <h2 id="t-descifra" data-char>Pulsa el símbolo que tengas delante</h2>
+      <p class="parrafo">
+        Doce símbolos y lo que significan de verdad, sin tecnicismos. Son los mismos que
+        miramos nosotros antes de meter nada en la máquina.
+      </p>
+    </div>
+
+    <div class="descifra__caja">
+      <div class="descifra__rejilla" role="group" aria-label="Símbolos de la etiqueta">
+        <!--SIMBOLOS-->
+        <button type="button" class="descifra__simbolo esta-activo" data-simbolo="lavar-30"
+          data-nombre="Lavar a 30 grados" data-texto="Lavadora a 30 °C. Es lo que lleva casi toda la ropa de diario, y lo que menos la gasta." aria-pressed="true">
+          <img src="assets/simbolos/simbolo-lavar-30.svg" width="100" height="100" loading="lazy" alt="Lavar a 30 grados">
+        </button>
+        <button type="button" class="descifra__simbolo" data-simbolo="lavar-40"
+          data-nombre="Lavar a 40 grados" data-texto="Lavadora a 40 °C. Toallas, sábanas y todo lo que sude de verdad." aria-pressed="false">
+          <img src="assets/simbolos/simbolo-lavar-40.svg" width="100" height="100" loading="lazy" alt="Lavar a 40 grados">
+        </button>
+        <button type="button" class="descifra__simbolo" data-simbolo="lavar-60"
+          data-nombre="Lavar a 60 grados" data-texto="Lavadora a 60 °C. Ropa de cama y de trabajo cuando hace falta desinfectar." aria-pressed="false">
+          <img src="assets/simbolos/simbolo-lavar-60.svg" width="100" height="100" loading="lazy" alt="Lavar a 60 grados">
+        </button>
+        <button type="button" class="descifra__simbolo" data-simbolo="lavar-mano"
+          data-nombre="Lavar a mano" data-texto="A mano, en agua templada y sin retorcer. Aquí lo hacemos nosotros si nos lo dejas." aria-pressed="false">
+          <img src="assets/simbolos/simbolo-lavar-mano.svg" width="100" height="100" loading="lazy" alt="Lavar a mano">
+        </button>
+        <button type="button" class="descifra__simbolo" data-simbolo="no-lavar"
+          data-nombre="No lavar en agua" data-texto="No se moja. Va a limpieza en seco y punto: si lo metes en agua, encoge o se deforma." aria-pressed="false">
+          <img src="assets/simbolos/simbolo-no-lavar.svg" width="100" height="100" loading="lazy" alt="No lavar en agua">
+        </button>
+        <button type="button" class="descifra__simbolo" data-simbolo="no-blanquear"
+          data-nombre="No usar lejía" data-texto="Sin lejía ni quitamanchas con cloro. Nosotros usamos oxígeno activo, que no come el color." aria-pressed="false">
+          <img src="assets/simbolos/simbolo-no-blanquear.svg" width="100" height="100" loading="lazy" alt="No usar lejía">
+        </button>
+        <button type="button" class="descifra__simbolo" data-simbolo="secadora-suave"
+          data-nombre="Secadora suave" data-texto="Secadora a temperatura baja. Un punto es suave; dos, normal." aria-pressed="false">
+          <img src="assets/simbolos/simbolo-secadora-suave.svg" width="100" height="100" loading="lazy" alt="Secadora suave">
+        </button>
+        <button type="button" class="descifra__simbolo" data-simbolo="no-secadora"
+          data-nombre="No usar secadora" data-texto="Nada de secadora: se tiende. Si lo metes, encoge y no hay vuelta atrás." aria-pressed="false">
+          <img src="assets/simbolos/simbolo-no-secadora.svg" width="100" height="100" loading="lazy" alt="No usar secadora">
+        </button>
+        <button type="button" class="descifra__simbolo" data-simbolo="planchar-medio"
+          data-nombre="Planchar a temperatura media" data-texto="Plancha media, unos 150 °C. Dos puntos es lana y mezclas; tres, algodón y lino." aria-pressed="false">
+          <img src="assets/simbolos/simbolo-planchar-medio.svg" width="100" height="100" loading="lazy" alt="Planchar a temperatura media">
+        </button>
+        <button type="button" class="descifra__simbolo" data-simbolo="no-planchar"
+          data-nombre="No planchar" data-texto="No se plancha. Suele ser sintético: con calor se marca y ya no se quita." aria-pressed="false">
+          <img src="assets/simbolos/simbolo-no-planchar.svg" width="100" height="100" loading="lazy" alt="No planchar">
+        </button>
+        <button type="button" class="descifra__simbolo" data-simbolo="seco-p"
+          data-nombre="Limpieza en seco" data-texto="Limpieza en seco con percloroetileno o similar. Es lo que hacemos con abrigos y trajes." aria-pressed="false">
+          <img src="assets/simbolos/simbolo-seco-p.svg" width="100" height="100" loading="lazy" alt="Limpieza en seco">
+        </button>
+        <button type="button" class="descifra__simbolo" data-simbolo="no-seco"
+          data-nombre="No limpiar en seco" data-texto="Ni en seco ni con disolventes. Casi siempre significa lavar a mano y con paciencia." aria-pressed="false">
+          <img src="assets/simbolos/simbolo-no-seco.svg" width="100" height="100" loading="lazy" alt="No limpiar en seco">
+        </button>
+        <!--/SIMBOLOS-->
+      </div>
+
+      <output class="descifra__salida" data-salida aria-live="polite">
+        <h3 data-salida-nombre>Lavar a 30 grados</h3>
+        <p data-salida-texto>Lavadora a 30 °C. Es lo que lleva casi toda la ropa de diario, y lo que menos la gasta.</p>
+        <p class="descifra__nota">
+          Si la etiqueta ya no se lee —pasa mucho—, tráela y la miramos: por el tejido y
+          por cómo está cosida se acierta casi siempre.
+        </p>
+      </output>
+    </div>
+  </section>
+
+  <!-- ══════════ SERVICIOS ══════════ -->
+  <section class="servicios" id="servicios" aria-labelledby="t-servicios">
+    <div class="seccion__cabeza">
+      <p class="indice">02 — Servicios</p>
+      <h2 id="t-servicios" data-char>Lo que hacemos y lo que cuesta</h2>
+    </div>
+
+    <table class="tabla">
+      <caption class="visualmente-oculta">Servicios y precios, IVA incluido</caption>
+      <thead><tr><th scope="col">Servicio</th><th scope="col">Precio</th><th scope="col">Cuánto tarda</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Lavar y doblar</th><td>2,60 €/kg</td><td>24 horas · mínimo 5 kg</td></tr>
+        <tr><th scope="row">Solo secar</th><td>1,20 €/kg</td><td>En el día</td></tr>
+        <tr><th scope="row">Edredón o nórdico</th><td>desde 12 €</td><td>48 horas</td></tr>
+        <tr><th scope="row">Planchado de camisa</th><td>2,20 €</td><td>24 horas</td></tr>
+        <tr><th scope="row">Limpieza en seco, abrigo</th><td>14 €</td><td>3 días</td></tr>
+        <tr><th scope="row">Recogida y entrega</th><td>3 €</td><td>Gratis a partir de 25 €</td></tr>
+      </tbody>
+    </table>
+
+    <aside class="servicios__nota">
+      <h3>Lo que no hacemos</h3>
+      <ul>
+        <li>No quitamos manchas imposibles. Si lleva tinta seca de un año, lo decimos antes de cobrar.</li>
+        <li>No teñimos ni destiñimos ropa.</li>
+        <li>No arreglamos prendas: si hay que coser, te mandamos a la de al lado.</li>
+        <li>No respondemos de prendas sin etiqueta o con la etiqueta cortada, aunque lo intentamos igual.</li>
+      </ul>
+      <p class="servicios__aviso">Precios inventados para esta demostración.</p>
+    </aside>
+  </section>
+
+  <!-- ══════════ AUTOSERVICIO ══════════ -->
+  <section class="autoservicio" id="autoservicio" aria-labelledby="t-autoservicio">
+    <div class="seccion__cabeza">
+      <p class="indice">03 — Autoservicio</p>
+      <h2 id="t-autoservicio" data-char>Abierto de 7 a 23, todos los días</h2>
+      <p class="parrafo">
+        Seis lavadoras y cuatro secadoras, con monedas o con tarjeta. El jabón lo pone la
+        máquina, así que no hace falta traer nada.
+      </p>
+    </div>
+
+    <ul class="maquinas">
+      <li>
+        <p class="maquinas__tam">8 kg</p>
+        <p class="maquinas__uso">Una colada normal de dos personas</p>
+        <p class="maquinas__precio">4,50 €</p>
+      </li>
+      <li>
+        <p class="maquinas__tam">14 kg</p>
+        <p class="maquinas__uso">Sábanas, toallas y ropa de una casa entera</p>
+        <p class="maquinas__precio">7,50 €</p>
+      </li>
+      <li>
+        <p class="maquinas__tam">18 kg</p>
+        <p class="maquinas__uso">Edredones, alfombras y sacos de dormir</p>
+        <p class="maquinas__precio">9,50 €</p>
+      </li>
+      <li>
+        <p class="maquinas__tam">Secadora</p>
+        <p class="maquinas__uso">12 minutos por ficha, se puede encadenar</p>
+        <p class="maquinas__precio">1,50 €</p>
+      </li>
+    </ul>
+
+    <p class="aviso">
+      Las máquinas, sus tamaños y sus precios son inventados para esta demostración.
+    </p>
+  </section>
+
+  <!-- ══════════ CUÁNDO LO TIENES ══════════ -->
+  <section class="cuando" id="cuando" aria-labelledby="t-cuando">
+    <div class="seccion__cabeza">
+      <p class="indice">04 — Cuándo lo tienes</p>
+      <h2 id="t-cuando" data-char>Si lo dejas ahora…</h2>
+    </div>
+
+    <p class="cuando__cuenta" data-vivo>
+      <span class="cuando__etiqueta">Lavar y doblar, entregado el</span>
+      <span class="cuando__valor" data-entrega>calculando…</span>
+    </p>
+
+    <ol class="pasos">
+      <li><b>01</b><span>Lo dejas en el mostrador y te damos un resguardo con tu nombre y el peso.</span></li>
+      <li><b>02</b><span>Lo lavamos, lo secamos y lo doblamos. Lo que va aparte, va aparte.</span></li>
+      <li><b>03</b><span>Te avisamos por mensaje cuando está. Se guarda quince días sin coste.</span></li>
+    </ol>
+    <p class="aviso">La fecha de entrega se calcula sola a partir de la hora que sea ahora mismo, contando 24 horas y el horario de mostrador. Es una demostración: aquí no hay nada que recoger.</p>
+  </section>
+
+  <!-- ══════════ VISITA ══════════ -->
+  <section class="visita" id="visita" aria-labelledby="t-visita">
+    <div class="seccion__cabeza">
+      <p class="indice">05 — Dónde estamos</p>
+      <h2 id="t-visita" data-char>Rúa do Pozo, 6</h2>
+    </div>
+
+    <div class="visita__rejilla">
+      <div class="donde">
+        <p class="donde__estado" data-estado>Comprobando el horario…</p>
+        <address>
+          Rúa do Pozo, 6 · bajo<br>
+          36600 Vilagarcía de Arousa<br>
+          <a href="tel:+34986000073">986 00 00 73</a><br>
+          <a href="mailto:hola@escuma.example">hola@escuma.example</a>
+        </address>
+        <dl class="horario" data-horario>
+          <div data-dias="0,1,2,3,4,5,6"><dt>Autoservicio, todos los días</dt><dd>07:00–23:00</dd></div>
+          <div data-dias="1,2,3,4,5"><dt>Mostrador, de lunes a viernes</dt><dd>09:00–14:00 · 16:30–20:00</dd></div>
+          <div data-dias="6"><dt>Mostrador, sábado</dt><dd>09:30–14:00</dd></div>
+        </dl>
+        <p class="donde__nota">
+          Local a pie de calle, con sitio para el carro y para esperar sentado. Hay wifi y
+          un enchufe en cada banco, que es lo que de verdad importa cuando quedan
+          cuarenta minutos de centrifugado.
+        </p>
+        <div class="mapa" data-mapa>
+          <button class="boton boton--linea" type="button" data-mapa-boton>Cargar el mapa de Google</button>
+          <p class="mapa__aviso">El mapa se carga solo si lo pides: hasta entonces esta web no llama a ningún servidor de terceros.</p>
+        </div>
+      </div>
+
+      <form class="formulario" data-recogida novalidate>
+        <h3>Pedir recogida a domicilio</h3>
+        <p class="formulario__texto">Pasamos por tu casa, lo lavamos y te lo devolvemos doblado. 3 € en el casco urbano.</p>
+        <p class="campo">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+        </p>
+        <p class="campo">
+          <label for="tel">Teléfono</label>
+          <input id="tel" name="tel" type="tel" autocomplete="tel" required>
+        </p>
+        <p class="campo">
+          <label for="direccion">Dirección</label>
+          <input id="direccion" name="direccion" type="text" autocomplete="street-address">
+        </p>
+        <p class="campo">
+          <label for="franja">Cuándo te viene bien</label>
+          <select id="franja" name="franja">
+            <option>Mañana, de 9:00 a 14:00</option>
+            <option>Tarde, de 16:30 a 20:00</option>
+            <option>Me da igual</option>
+          </select>
+        </p>
+        <button class="boton boton--verde" type="submit" data-iman>Pedir recogida</button>
+        <p class="formulario__estado" data-recogida-estado role="status"></p>
+        <p class="formulario__demo">Formulario de muestra: no envía nada a ningún sitio ni guarda lo que escribas.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="pie__marca">
+    <svg class="marca__icono" viewBox="0 0 34 34" aria-hidden="true" focusable="false">
+      <rect x="4" y="4" width="26" height="26" rx="5" fill="none" stroke="currentColor" stroke-width="3"/>
+      <circle cx="17" cy="18" r="8" fill="none" stroke="currentColor" stroke-width="3"/>
+      <circle cx="17" cy="18" r="2.5" fill="currentColor"/>
+    </svg>
+    <p>Escuma · lavandería<br>Rúa do Pozo, 6 · Vilagarcía de Arousa</p>
+  </div>
+  <nav class="pie__nav" aria-label="Enlaces del pie">
+    <ul>
+      <li><a href="#descifra">Tu etiqueta</a></li>
+      <li><a href="#servicios">Precios</a></li>
+      <li><a href="#visita">Recogida a domicilio</a></li>
+      <li><a href="legal.html">Aviso legal y privacidad</a></li>
+    </ul>
+  </nav>
+  <p class="pie__sello">
+    <strong>Sitio de demostración.</strong> Escuma es un negocio ficticio; los datos,
+    precios, máquinas y plazos son de muestra. Ningún dato de esta página corresponde a un
+    negocio real. Los símbolos de cuidado están dibujados en SVG para esta plantilla y son
+    pictogramas genéricos, no la marca de nadie.
+  </p>
+</footer>
+
+<div class="cookie-banner" data-cookies hidden>
+  <p>Esta web usa una única cookie técnica para recordar que has visto este aviso. No hay analítica, ni seguimiento, ni cookies de terceros: el mapa de Google solo se carga si pulsas el botón.</p>
+  <div class="cookie-banner__acciones">
+    <button class="boton boton--verde" type="button" data-cookies-ok>Entendido</button>
+    <a class="boton boton--linea" href="legal.html#cookies">Leer más</a>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

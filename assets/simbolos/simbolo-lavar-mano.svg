@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Lavar a mano">
+<title>Lavar a mano</title>
+<path d="M14 34h72l-8 44a12 12 0 0 1-12 10H34a12 12 0 0 1-12-10z" fill="none" stroke="#14261F" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M14 34c10-10 22-4 30-8s16-10 28-2" fill="none" stroke="#14261F" stroke-width="5" stroke-linecap="round"/><path d="M34 62v-16a5 5 0 0 1 10 0v12m0-4v-18a5 5 0 0 1 10 0v18m0-6v-14a5 5 0 0 1 10 0v22c0 10-6 16-16 16h-6c-8 0-14-6-14-14v-6" fill="none" stroke="#14261F" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
