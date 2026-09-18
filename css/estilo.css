@@ -423,3 +423,42 @@ section[id] { scroll-margin-top: clamp(4.5rem, 10vh, 6rem); }
   .cursor { display: none; }
   .descifra__simbolo:hover { transform: none; }
 }
+
+/* ── Cortina de entrada ────────────────────────────────────────────────
+   Obligatoria (§5 del pliego). El `display` va en `:not([hidden])`, nunca
+   en la clase a secas: si no, ganaría al atributo y la página quedaría
+   tapada para siempre —el mismo fallo que el aviso de cookies.
+   ────────────────────────────────────────────────────────────────────── */
+.cortina { position: fixed; inset: 0; z-index: 400; }
+.cortina:not([hidden]) { display: grid; place-items: center; }
+.cortina[hidden] { display: none !important; }
+.cortina__centro {
+  position: relative; z-index: 3;
+  display: grid; justify-items: center; gap: 0.9rem;
+  padding: 0 1.5rem; text-align: center;
+}
+.cortina__marca {
+  margin: 0; font-family: var(--display);
+  font-size: clamp(2.1rem, 8vw, 4.6rem); line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+.cortina__pie {
+  margin: 0; font-family: var(--mono);
+  font-size: clamp(0.6rem, 1.8vw, 0.72rem); letter-spacing: 0.34em;
+  text-transform: uppercase;
+}
+@media (prefers-reduced-motion: reduce) { .cortina { display: none !important; } }
+
+/* «Etiqueta»: los símbolos de cuidado aparecen y el agua se va por abajo.
+   La onda es el borde de arriba y en reposo queda fuera de pantalla. */
+.cortina--lavanderia { background: var(--tinta); overflow: visible; }
+.cortina__onda { position: absolute; left: 0; right: 0; top: calc(-7vh + 1px); width: 100%; height: 7vh; }
+.cortina__onda path { fill: var(--tinta); }
+.cortina--lavanderia .cortina__marca { color: var(--papel-claro); }
+.cortina--lavanderia .cortina__pie { color: var(--verde); }
+.cortina__simbolos { display: flex; gap: clamp(0.6rem, 2.5vw, 1.4rem); }
+.cortina__simbolo { width: clamp(28px, 7vw, 46px); height: auto; }
+.cortina__simbolo path, .cortina__simbolo circle {
+  fill: none; stroke: var(--papel-claro); stroke-width: 2.5;
+  stroke-linejoin: round; stroke-linecap: round;
+}

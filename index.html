@@ -50,9 +50,28 @@
   "disambiguatingDescription": "Negocio ficticio. Sitio de demostración."
 }
 </script>
+<!-- Sin JavaScript no hay quien levante la cortina: mejor no enseñarla. -->
+<noscript><style>.cortina { display: none !important; }</style></noscript>
 </head>
 <body>
 <a class="salto" href="#contenido">Saltar al contenido</a>
+<!-- Cortina «etiqueta»: salen los símbolos de cuidado y el agua se va por abajo. -->
+<div class="cortina cortina--lavanderia" data-cortina aria-hidden="true">
+  <svg class="cortina__onda" viewBox="0 0 240 40" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 40V22c20-14 40 6 60 0s40-20 60-12 40 20 60 14 40-16 60-18v34z"/>
+  </svg>
+  <div class="cortina__centro">
+    <div class="cortina__simbolos">
+      <svg class="cortina__simbolo" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 16c0-3 3-4 6-6l10-6 10 6c3 2 6 3 6 6v22H6z"/><path d="M6 20c6 4 10-2 16 0s10 4 16 0"/></svg>
+      <svg class="cortina__simbolo" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="18"/><circle cx="24" cy="24" r="4"/></svg>
+      <svg class="cortina__simbolo" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40L24 6l16 34z"/><path d="M14 30h20"/></svg>
+      <svg class="cortina__simbolo" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 34V18l14-8v28z"/><path d="M20 22h16c4 0 6 3 6 6s-2 6-6 6H20"/></svg>
+    </div>
+    <p class="cortina__marca">Escuma</p>
+    <p class="cortina__pie">aclarando</p>
+  </div>
+</div>
+
 
 <div class="cursor" aria-hidden="true" data-cursor>
   <span class="cursor__burbuja"></span>

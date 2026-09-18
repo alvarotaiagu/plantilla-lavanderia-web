@@ -38,6 +38,17 @@ el blanco clínico de la óptica ni el papel crudo de la enoteca.
 
 ## Recursos de movimiento
 
+**0. Cortina de entrada.** **«Etiqueta»** — salen los símbolos de cuidado uno a uno y después el agua se va por abajo: la cortina cae entera y su borde de arriba es una onda.
+
+Es obligatoria en todas las plantillas (§5 del pliego) y está hecha para no dejar la
+página tapada nunca: se retira al terminar la animación, se retira igual si el CDN de
+GSAP no carga, se retira con `prefers-reduced-motion` y hay además un `setTimeout` de
+5 s de red de seguridad. El `display` va en `.cortina:not([hidden])`, nunca en
+`.cortina` a secas —si fuera a secas ganaría al atributo `hidden` y no se iría jamás.
+El hero no entra hasta que la cortina va por la mitad (la constante `ESPERA` de
+`main.js`), para que el relevo se vea como una sola cosa y no como dos animaciones
+pegadas.
+
 1. **Lenis** como único motor de scroll.
 2. **El descifrador** — el recurso protagonista: selección de símbolo con salida que
    entra animada, y que funciona igual sin GSAP.
@@ -51,6 +62,10 @@ el blanco clínico de la óptica ni el papel crudo de la enoteca.
 `PerformanceObserver` de `longtask` en la pasada de verificación (Chromium, 1440×900,
 recorrido completo con la rueda): **1 tarea larga, de 78 ms, al arrancar** (GSAP +
 webfont) y **0 mientras se recorre la página**.
+
+- **La cortina no añade tarea larga propia**: en la medición con cortina la tarea de
+  arranque es de **77 ms**, del mismo orden que antes de ponerla, porque el gesto son
+  transformaciones y opacidades, sin `blur` ni sombras por fotograma.
 
 ## Cómo reskinearlo a una lavandería real
 
